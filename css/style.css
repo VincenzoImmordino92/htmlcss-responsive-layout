@@ -31,17 +31,41 @@ a{
   color: white;
 }
 
+.btm-apple{
+  display: inline-block;
+  background-color:#0084FD;
+  border-radius: 25px;
+  padding: 10px 80px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
 .btm{
+  display: inline-block;
   background-color: #9792E4;
   border-radius: 25px;
-  padding: 8px 40px;
+  padding: 8px 50px;
   letter-spacing: 1.5px;
+  margin-top: 15px;
 }
 
 .btm-linkedin{
+  display: inline-block;
   background-color: #9792E4;
   border-radius: 25px;
   padding: 10px 10px;
+}
+
+.btm-free{
+  display: inline-block;
+  background-color: #ffffff;
+  color: #9792E4;
+  text-transform: capitalize;
+  border-radius: 50px;
+  padding: 20px 80px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
 .arrow{
@@ -98,13 +122,28 @@ border-radius: 25px;
 padding: 20px 20px;
 }
 
+.intro .col h2:first-child{
+font-size: 2.6rem;
+}
+
 .intro .col i{
 font-size: 5rem;
 }
 
-.intro .col i,h2 {
-color:rgb(29, 151, 221) ;
+.intro .col i:first-child{
+  color: white;
+  font-size: 1rem;
+
 }
+
+.intro .col i,h2 {
+color:#0084FD;
+}
+
+.intro h2{
+  color: #0084FD;
+}
+
 .intro .row .intro-card:first-child{
 display: flex;
 flex-direction: column;
@@ -159,7 +198,6 @@ text-align: left;
   flex-direction: column; 
   background-color: white;
   color: black;
-  border: 1px solid black;
   margin: 25px 0 25px 0;
   padding: 30px 0px;
   border-radius: 25px;
@@ -191,6 +229,7 @@ text-align: left;
 
 .text-testimonial h2{
   color: #9792E4;
+  font-size: 2.9rem;
 }
 
 .text-testimonial,.card-testimonial{
@@ -231,7 +270,14 @@ margin: 40px 25px;
 }
 
 .working h1{
-  font-size: 2rem;
+  font-size: 2.7rem;
+}
+
+.working h2:first-child{
+  color: white;
+  font-size: 3.4rem;
+  text-align: center;
+  padding: 50px 10px 50px 10px;
 }
 
 .working h2{
@@ -243,19 +289,26 @@ margin: 40px 25px;
   color: gray;
 }
 
+.working h1,h2,p{
+padding: 10px 0;
+}
 
 .card-working{
   width: 90%;
   color: #9792E4;
   background-color:white;
-  padding: 10px 20px;
+  padding: 40px 25px;
   margin: 15px 0px;
   border-radius: 25px;
 }
 
 .card-working h1,h2,p,span{
-  margin: 10px 10px;
+  padding: 10px 10px;
 }
+
+/* fine quarta section working */
+
+/* inizio quinta section working */
 
 .about{
 width: 100%;
@@ -264,20 +317,123 @@ margin-bottom: 50px;
 }
 
 .text-about{
-width: 90%;
+width: 100%;
 margin: 15px 20px;
 }
 
-.text-about h1,h3{
+.text-about h1{
+  font-size: 3.5rem;
+}
+
+.text-about h2{
+  font-size: 2.9rem;
+}
+
+
+.about .text-about p{
+  letter-spacing: 1px;
+}
+
+.text-about h1,h3,h2{
 color:#9792E4;
 }
+
+.image-about{
+  width: 60%;
+position: relative;
+margin: 25px 0;
+}
+
+.about .text-about img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.about .text-about .fa-solid{
+  position: absolute;
+  bottom: 75%;
+  right: 5%;
+  font-size: 4.5rem;
+  color: #9792E4;
+}
+
+.about .text-about .fa-linkedin{
+  margin-right: 10px;
+}
+
+/* fine quinta section about */
+
+/* inizio section footer free */
 
 .free{
   width: 100%;
   background-color: #9792E4;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0 0px 0;
+}
+
+.text-free{
+  padding: 40px 10px 40px 10px;
+}
+
+.text-free span{
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+}
+.text-free h2{
+  color: white;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.text-free h1{
+  color: rgb(241, 187, 9);
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.text-free p{
+  color: white;
+}
+
+.row-copyright {
+display: inline;
+margin: 50px 0px;
+}
+
+.row-copyright li{
+display: inline-block;
+color: white;
+margin: 0px 10px;
+text-align: center;
+}
+
+.row-copyright li:first-child{
+  list-style-type: none;
 }
 
 
+.end-free{
+  background-color: #333333;
+  padding: 50px 50px;
+}
+
+.end-free p{
+  color: white;
+  margin: 40px 0 0 0;
+}
+
+.end-free p a{
+  color: #9792E4;
+  text-decoration: underline;
+}
+
+/* fine section footer free */
 
 
 @media screen and (min-width:768px){
