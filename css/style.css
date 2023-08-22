@@ -11,8 +11,8 @@ body{
 }
 
 .container {
-  max-width:1140px;
-  margin: 0 auto;
+  width:90%;
+  margin: 0px auto;
 }
 
 .debug{
@@ -32,17 +32,29 @@ a{
 }
 
 .btm{
-  background-color: rgb(148, 108, 223);
+  background-color: #9792E4;
   border-radius: 25px;
   padding: 8px 40px;
+  letter-spacing: 1.5px;
 }
 
 .btm-linkedin{
-  background-color: rgb(148, 108, 223);
+  background-color: #9792E4;
   border-radius: 25px;
   padding: 10px 10px;
 }
 
+.arrow{
+  display: inline-block;
+  background-color: #9792E4;
+  border-radius:50%;
+  padding: 10px 15px;
+}
+
+p,em{
+  font-size: 1.2rem;
+  line-height:30px;
+}
 
 .menu{
   width: 100%;
@@ -70,22 +82,13 @@ a{
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/* prima section intro */
 
 .intro{
-margin: 80px 25px;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
+padding:60px 0px 60px 0px;
+flex-wrap: wrap;
+align-items: center;
+text-align: center;
 }
 
 .intro .col {
@@ -96,19 +99,19 @@ padding: 20px 20px;
 }
 
 .intro .col i{
-  font-size: 5rem;
+font-size: 5rem;
 }
 
 .intro .col i,h2 {
-  color:rgb(29, 151, 221) ;
+color:rgb(29, 151, 221) ;
 }
 .intro .row .intro-card:first-child{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(128, 210, 243, 0.89);
-  border-radius: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: rgba(128, 210, 243, 0.89);
+border-radius: 25px;
 }
 
 .intro .row .col:first-child{
@@ -119,84 +122,131 @@ text-align: left;
   width:100%; 
 }
 
+/* fine section intro */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* seconda section planning */
 
 .planning{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(148, 108, 223);
+  background-color:#9792E4;
+  color: white;
   width: 100%;
   text-align: left;
+  padding: 40px 0 80px 0;
+}
+
+.planning h2{
+  color: white;
+  display: inline-block;
 }
 
 .planning-image{
-  width: 90%;
-  height: 200px;
-  align-items: center;
-  background-color: white;
-  border: 1px solid black;
-  margin: 50px 0px;
-  border-radius: 25px;
+  width: 100%;
+}
+
+.planning-image img{
+  width: 100%;
+  object-fit: cover;
+  padding: 20px;
 }
 
 .planning-card{
   width: 90%;
-  height: 200px;
   align-items: center;
-  flex-direction: row; 
+  flex-direction: column; 
   background-color: white;
+  color: black;
   border: 1px solid black;
-  margin: 50px 0px;
+  margin: 25px 0 25px 0;
+  padding: 30px 0px;
   border-radius: 25px;
-
+  text-align: center;
 }
-/* sezione */
+
+.planning-card img{
+  width: 100%;
+}
+
+.planning-card h2{
+  display:block;
+  color: black;
+}
+
+/* fine seconda section planning */
+
+/* inizio terza section testimonial */
+
 .testimonial{
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+.text-testimonial span{
+  text-transform: uppercase;
+}
+
+.text-testimonial h2{
+  color: #9792E4;
+}
+
 .text-testimonial,.card-testimonial{
-margin: 25px 25px;
+margin: 40px 25px;
 }
 
 .card-testimonial{
   color: white;
-  background-color: rgb(148, 108, 223);
+  background-color:#9792E4;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
+
+.card-testimonial img{
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 25px 0;
+}
+
+.card-testimonial h3{
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+/* fine terza section testimonial */
+
+/* inizio quarta section working */
 
 .working{
   width: 100%;
-  background-color: rgb(148, 108, 223);
+  background-color: #9792E4;
   flex-direction: column;
   align-items: center;
 }
 
+.working h1{
+  font-size: 2rem;
+}
+
+.working h2{
+  font-size: 1.3rem;
+  color: #9792E4;
+}
+
+.working p{
+  color: gray;
+}
+
+
 .card-working{
   width: 90%;
-  color: rgb(148, 108, 223);
+  color: #9792E4;
   background-color:white;
   padding: 10px 20px;
   margin: 15px 0px;
@@ -219,12 +269,12 @@ margin: 15px 20px;
 }
 
 .text-about h1,h3{
-color: rgb(148, 108, 223);
+color:#9792E4;
 }
 
 .free{
   width: 100%;
-  background-color: rgb(148, 108, 223);
+  background-color: #9792E4;
 }
 
 
