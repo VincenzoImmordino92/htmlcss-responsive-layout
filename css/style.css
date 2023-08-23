@@ -17,10 +17,15 @@ body{
 
 .debug{
   min-height: 50px;
+  width: 250px;
   border: 1px solid black;
   background-color: lightgrey;
 }
 
+.debug2{
+  border: 1px solid rgb(255, 255, 255);
+  background-color: lightgrey;
+}
 
 .d-flex{
   display: flex;
@@ -111,55 +116,37 @@ p,em{
 .intro{
 padding:60px 0px 60px 0px;
 flex-wrap: wrap;
-align-items: center;
-text-align: center;
 }
 
-.intro .col {
-background-color: rgba(128, 210, 243, 0.89);
-margin: 10px 0px;
-border-radius: 25px;
-padding: 20px 20px;
+.intro .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.intro .col h2:first-child{
-font-size: 2.6rem;
+.row-intro{
+  width: 100%;
+  flex-direction: column;
 }
 
-.intro .col i{
-font-size: 5rem;
+.row-intro .col{
+  text-align: center;
 }
 
-.intro .col i:first-child{
-  color: white;
-  font-size: 1rem;
 
+
+
+
+.row-intro .col img{
+width: 100%;
+object-fit: contain;
 }
 
-.intro .col i,h2 {
-color:#0084FD;
-}
 
-.intro h2{
-  color: #0084FD;
-}
 
-.intro .row .intro-card:first-child{
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-background-color: rgba(128, 210, 243, 0.89);
-border-radius: 25px;
-}
 
-.intro .row .col:first-child{
-text-align: left;
-}
 
-.intro .row .col:last-child img{
-  width:100%; 
-}
+
 
 /* fine section intro */
 
@@ -438,20 +425,41 @@ text-align: center;
 
 @media screen and (min-width:768px){
   .container{
-   width: 100%;
+   max-width:1140px;
   }
 
-  .intro{
+
+  .intro .col{
+    width: calc(100%/3);
+    flex-wrap: wrap;
+  }
+
+  .intro .row-intro{
+    width: 66.6666%;
+  }
+
+  .intro .row-intro .col{
     width: 100%;
-    flex-direction: row;
+  }
+
+
+
+
+  .intro .col
+
+
+
+  .intro .row:first-child{
+  width: 100%;
+  
   }
 
 }
 
 @media screen and (min-width:992px) {
   .container{
-    width: 100%;
-  }
+/*     width: 100%;
+ */  }
 
   .menu .row .col a:last-child{
     display: none;
